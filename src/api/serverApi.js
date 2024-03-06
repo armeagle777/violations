@@ -5,12 +5,11 @@ const serverApi = axios.create({
 });
 
 export const login = async (credentials) => {
-  return await serverApi.post('/users/login', credentials);
+  return await serverApi.get('/login', credentials);
+  // return await serverApi.post('/users/login', credentials);
 };
 
 export const getJkkViolations = async ({ countries, companies }) => {
-  console.log('countries in Fetch', countries);
-  console.log('companies', companies);
   const response = await serverApi.post('/tables/jkk', { countries, companies });
 
   return response.data;

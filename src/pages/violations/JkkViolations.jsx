@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
 import Alert from '../../components/alert/Alert';
 import Loader from '../../components/loader/Loader';
-import DataTable from '../../components/DataTable/DataTable';
+// import DataTable from '../../components/DataTable/DataTable';
 import { getCompanies, getCountries, getJkkViolations } from '../../api/serverApi';
 import { useSearchParams } from 'react-router-dom';
 import TableTitleRow from '../../components/DataTable/TableTitleRow';
@@ -15,6 +15,23 @@ const JkkViolations = () => {
   const countriesParams = searchParams.getAll('countries');
   const companiesParams = searchParams.getAll('companies');
 
+  const handleFilterCountries = useCallback(
+    (data) => {
+      setSearchParams({ countries: data, companies: companiesParams });
+    },
+    [companiesParams],
+  );
+
+  const handleFilterCompanies = useCallback(
+    (data) => {
+      setSearchParams({
+        companies: data,
+        countries: countriesParams,
+      });
+    },
+    [countriesParams],
+  );
+
   const {
     data: violations,
     isLoading,
@@ -23,7 +40,7 @@ const JkkViolations = () => {
     error,
     refetch,
   } = useQuery(
-    ['violations', 'jkk', countriesParams],
+    ['violations', 'jkk', countriesParams, companiesParams],
     () => getJkkViolations({ countries: countriesParams, companies: companiesParams }),
     {
       keepPreviousData: true,
@@ -71,18 +88,9 @@ const JkkViolations = () => {
     return <Loader />;
   }
 
-  const handleFilterCountries = (data) => {
-    setSearchParams({ countries: data, companies: companies });
-    // refetch();
-  };
-  const handleFilterCompanies = (data) => {
-    setSearchParams({
-      companies: data,
-      countries: countries,
-    });
-
-    // refetch();
-  };
+  // const handleFilterCountries = (data) => {
+  //   setSearchParams({ countries: data, companies: companiesParams });
+  // };
 
   const dropdownOptions = controlledColumns.map((el) => ({
     key: el.key,
@@ -112,6 +120,8 @@ const JkkViolations = () => {
       <TableTitleRow
         dropdownOptions={dropdownOptions}
         countries={countries}
+        countriesParams={countriesParams}
+        companiesParams={companiesParams}
         companies={companies}
         isCountriesLoading={isCountriesLoading || isCountriesFetching}
         isCompaniesLoading={isCompaniesLoading || isCompaniesFetching}

@@ -1,7 +1,7 @@
 import { Select, Skeleton } from 'antd';
 import { memo } from 'react';
 
-const SkeletonSelect = ({ isLoading, onChange, options }) => {
+const SkeletonSelect = ({ isLoading, onChange, options, selectedValues }) => {
   return isLoading ? (
     <Skeleton.Input active block={true} />
   ) : (
@@ -14,6 +14,7 @@ const SkeletonSelect = ({ isLoading, onChange, options }) => {
       placeholder="Ընտրեք երկիրը"
       onChange={onChange}
       options={options}
+      value={selectedValues?.map((el) => +el) || []}
     />
   );
 };

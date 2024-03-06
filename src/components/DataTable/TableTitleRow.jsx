@@ -4,6 +4,7 @@ import { FaGripVertical } from 'react-icons/fa';
 
 import ExportExcelButton from './ExportExcelButton';
 import SkeletonSelect from './SkeletonSelect';
+import { useState } from 'react';
 
 const TableTitleRow = ({
   dropdownOptions,
@@ -13,28 +14,49 @@ const TableTitleRow = ({
   isCompaniesLoading,
   onFilterCountries,
   onFilterCompanies,
+  countriesParams,
+  companiesParams,
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
   const countriesOptions = countries?.map((c) => ({ label: c.name_am, value: c.id, key: c.id }));
   const companiesOptions = companies?.map((c) => ({
     label: c.company_title,
-    value: c.company_id,
-    key: c.company_id,
+    value: c.companyId,
+    key: c.companyId,
   }));
+
+  const handleOpenChange = (nextOpen, info) => {
+    if (info.source === 'trigger' || nextOpen) {
+      setIsOpen(nextOpen);
+    }
+  };
 
   return (
     <Flex justify="space-between">
       <Flex style={{ width: '60%', gap: 10 }}>
-        <SkeletonSelect isLoading={isCountriesLoading} onChange={onFilterCountries} options={countriesOptions} />
-        <SkeletonSelect isLoading={isCompaniesLoading} onChange={onFilterCompanies} options={companiesOptions} />
+        <SkeletonSelect
+          selectedValues={countriesParams}
+          isLoading={isCountriesLoading}
+          onChange={onFilterCountries}
+          options={countriesOptions}
+        />
+        <SkeletonSelect
+          selectedValues={companiesParams}
+          isLoading={isCompaniesLoading}
+          onChange={onFilterCompanies}
+          options={companiesOptions}
+        />
       </Flex>
       <Flex>
         <Dropdown
           menu={{
             items: dropdownOptions,
           }}
+          onOpenChange={handleOpenChange}
           placement="bottomRight"
           arrow
-          trigger={['click']}
+          // trigger={['click']}
+          open={isOpen}
         >
           <Button
             type="link"

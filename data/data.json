@@ -71,27 +71,27 @@
   ],
   "companies": [
     {
-      "company_id": 326,
+      "companyId": 326,
       "company_title": "««ԱԼԱՇԿԵՐՏ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ»"
     },
     {
-      "company_id": 679,
+      "companyId": 679,
       "company_title": "««ԳԱՆՁԱՍԱՐ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ» "
     },
     {
-      "company_id": 301,
+      "companyId": 301,
       "company_title": "««ՆՈԱ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ»"
     },
     {
-      "company_id": 665,
+      "companyId": 665,
       "company_title": "«ԱԳԱԹ-777»"
     },
     {
-      "company_id": 252,
+      "companyId": 252,
       "company_title": "«ԱԴԱՄԻՈՒՄ»"
     },
     {
-      "company_id": 74,
+      "companyId": 74,
       "company_title": "«ԱԴԵՎԻՑ»"
     }
   ],
@@ -108,6 +108,7 @@
       "employee_telephone": "0037495706999",
       "tin": "00005614",
       "company_title": "«Վ. ԲՐՅՈՒՍՈՎԻ ԱՆՎԱՆ ՊԵՏԱԿԱՆ ՀԱՄԱԼՍԱՐԱՆ» ՀԻՄՆԱԴՐԱՄ",
+      "companyId": 679,
       "company_email": "rector@bryusov.am",
       "company_telephone": "37460830121",
       "company_legal_address": "Հայաստան, ԵՐԵՎԱՆ, ԿԵՆՏՐՈՆ, ԹՈՒՄԱՆՅԱՆ Փ., --- 42, 0002",
@@ -118,6 +119,7 @@
     },
     {
       "id": 24621,
+      "companyId": 326,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -138,6 +140,7 @@
     },
     {
       "id": 24625,
+      "companyId": 326,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -158,6 +161,7 @@
     },
     {
       "id": 24630,
+      "companyId": 679,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -178,6 +182,7 @@
     },
     {
       "id": 24658,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -198,6 +203,7 @@
     },
     {
       "id": 24664,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -218,6 +224,7 @@
     },
     {
       "id": 24667,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -238,6 +245,7 @@
     },
     {
       "id": 24940,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -258,6 +266,7 @@
     },
     {
       "id": 24288,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Ավստրիա",
@@ -278,6 +287,7 @@
     },
     {
       "id": 24345,
+      "companyId": 679,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Կորեայի Հանր.",
@@ -298,6 +308,7 @@
     },
     {
       "id": 14014,
+      "companyId": 327,
       "type": "extension",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -318,6 +329,7 @@
     },
     {
       "id": 13306,
+      "companyId": 327,
       "type": "extension",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -338,6 +350,7 @@
     },
     {
       "id": 13307,
+      "companyId": 327,
       "type": "extension",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -358,6 +371,7 @@
     },
     {
       "id": 13346,
+      "companyId": 327,
       "type": "extension",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -378,6 +392,7 @@
     },
     {
       "id": 13348,
+      "companyId": 327,
       "type": "extension",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -398,6 +413,7 @@
     },
     {
       "id": 12135,
+      "companyId": 327,
       "type": "extension",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -418,6 +434,7 @@
     },
     {
       "id": 22118,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -438,6 +455,7 @@
     },
     {
       "id": 17828,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Լեհաստան",
@@ -458,6 +476,7 @@
     },
     {
       "id": 17830,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Գերմանիա",
@@ -478,6 +497,7 @@
     },
     {
       "id": 17925,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -498,6 +518,7 @@
     },
     {
       "id": 17406,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -518,6 +539,7 @@
     },
     {
       "id": 15514,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -538,6 +560,7 @@
     },
     {
       "id": 15516,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -558,6 +581,7 @@
     },
     {
       "id": 18601,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "ԱՄՆ",
@@ -578,6 +602,7 @@
     },
     {
       "id": 18614,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "ԱՄՆ",
@@ -598,6 +623,7 @@
     },
     {
       "id": 18615,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "ԱՄՆ",
@@ -618,6 +644,7 @@
     },
     {
       "id": 18616,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "ԱՄՆ",
@@ -638,6 +665,7 @@
     },
     {
       "id": 18618,
+      "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
       "name_am": "ԱՄՆ",
@@ -656,5 +684,6 @@
       "issue_date": "2023-08-15",
       "expire_date": "2024-06-26"
     }
-  ]
+  ],
+  "login": [{ "email": "asd@mail.ru", "password": "asd" }]
 }
