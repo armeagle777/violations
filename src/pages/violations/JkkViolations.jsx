@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
 import Alert from '../../components/alert/Alert';
@@ -63,7 +63,7 @@ const JkkViolations = () => {
           }))
       : [];
 
-  const [controlledColumns, setControlledColumns] = useState(columns);
+  const [controlledColumns, setControlledColumns] = useState([...columns]);
 
   const {
     data: countries,
@@ -82,10 +82,6 @@ const JkkViolations = () => {
 
   if (isError) {
     return <Alert message="Ինչ֊որ բան այնպես չէ" />;
-  }
-
-  if (isLoading || isFetching) {
-    return <Loader />;
   }
 
   const dropdownOptions = controlledColumns.map((el) => ({
@@ -123,17 +119,22 @@ const JkkViolations = () => {
         onFilterCountries={handleFilterCountries}
         onFilterCompanies={handleFilterCompanies}
       />
-      <Table
-        columns={controlledColumns}
-        dataSource={modifiedData}
-        loading={isLoading}
-        scroll={{
-          x: 1000,
-        }}
-        style={{
-          marginTop: 8,
-        }}
-      />
+
+      {isLoading || !controlledColumns.lenght ? (
+        <Loader />
+      ) : (
+        <Table
+          columns={controlledColumns}
+          dataSource={modifiedData}
+          loading={isLoading}
+          scroll={{
+            x: 1000,
+          }}
+          style={{
+            marginTop: 8,
+          }}
+        />
+      )}
     </>
   );
 };
