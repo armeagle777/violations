@@ -72,32 +72,38 @@
   "companies": [
     {
       "companyId": 326,
-      "company_title": "««ԱԼԱՇԿԵՐՏ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ»"
+      "company_title": "««ԱԼԱՇԿԵՐՏ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ»",
+      "id": "5853"
     },
     {
       "companyId": 679,
-      "company_title": "««ԳԱՆՁԱՍԱՐ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ» "
+      "company_title": "««ԳԱՆՁԱՍԱՐ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ» ",
+      "id": "db33"
     },
     {
       "companyId": 301,
-      "company_title": "««ՆՈԱ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ»"
+      "company_title": "««ՆՈԱ» ՖՈՒՏԲՈԼԱՅԻՆ ԱԿՈՒՄԲ»",
+      "id": "6014"
     },
     {
       "companyId": 665,
-      "company_title": "«ԱԳԱԹ-777»"
+      "company_title": "«ԱԳԱԹ-777»",
+      "id": "b051"
     },
     {
       "companyId": 252,
-      "company_title": "«ԱԴԱՄԻՈՒՄ»"
+      "company_title": "«ԱԴԱՄԻՈՒՄ»",
+      "id": "495e"
     },
     {
       "companyId": 74,
-      "company_title": "«ԱԴԵՎԻՑ»"
+      "company_title": "«ԱԴԵՎԻՑ»",
+      "id": "6190"
     }
   ],
   "violations": [
     {
-      "id": 24620,
+      "id": "24620",
       "type": "status_claim",
       "status": "allowed",
       "name_am": "Չինաստան",
@@ -118,7 +124,7 @@
       "expire_date": "2024-12-09"
     },
     {
-      "id": 24621,
+      "id": "24621",
       "companyId": 326,
       "type": "status_claim",
       "status": "allowed",
@@ -139,7 +145,7 @@
       "expire_date": "2024-12-09"
     },
     {
-      "id": 24625,
+      "id": "24625",
       "companyId": 326,
       "type": "status_claim",
       "status": "allowed",
@@ -160,7 +166,7 @@
       "expire_date": "2025-01-12"
     },
     {
-      "id": 24630,
+      "id": "24630",
       "companyId": 679,
       "type": "status_claim",
       "status": "allowed",
@@ -181,7 +187,7 @@
       "expire_date": "2025-01-10"
     },
     {
-      "id": 24658,
+      "id": "24658",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -202,7 +208,7 @@
       "expire_date": "2025-01-10"
     },
     {
-      "id": 24664,
+      "id": "24664",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -223,7 +229,7 @@
       "expire_date": "2025-01-10"
     },
     {
-      "id": 24667,
+      "id": "24667",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -244,7 +250,7 @@
       "expire_date": "2025-01-10"
     },
     {
-      "id": 24940,
+      "id": "24940",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -265,7 +271,7 @@
       "expire_date": "2024-12-20"
     },
     {
-      "id": 24288,
+      "id": "24288",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -286,7 +292,7 @@
       "expire_date": "2025-01-10"
     },
     {
-      "id": 24345,
+      "id": "24345",
       "companyId": 679,
       "type": "status_claim",
       "status": "allowed",
@@ -307,7 +313,7 @@
       "expire_date": "2024-12-06"
     },
     {
-      "id": 14014,
+      "id": "14014",
       "companyId": 327,
       "type": "extension",
       "status": "allowed",
@@ -328,7 +334,7 @@
       "expire_date": "2024-05-30"
     },
     {
-      "id": 13306,
+      "id": "13306",
       "companyId": 327,
       "type": "extension",
       "status": "allowed",
@@ -349,7 +355,7 @@
       "expire_date": "2024-04-19"
     },
     {
-      "id": 13307,
+      "id": "13307",
       "companyId": 327,
       "type": "extension",
       "status": "allowed",
@@ -370,7 +376,7 @@
       "expire_date": "2024-05-10"
     },
     {
-      "id": 13346,
+      "id": "13346",
       "companyId": 327,
       "type": "extension",
       "status": "allowed",
@@ -391,7 +397,7 @@
       "expire_date": "2024-04-19"
     },
     {
-      "id": 13348,
+      "id": "13348",
       "companyId": 327,
       "type": "extension",
       "status": "allowed",
@@ -412,7 +418,7 @@
       "expire_date": "2024-05-12"
     },
     {
-      "id": 12135,
+      "id": "12135",
       "companyId": 327,
       "type": "extension",
       "status": "allowed",
@@ -433,7 +439,7 @@
       "expire_date": "2024-03-24"
     },
     {
-      "id": 22118,
+      "id": "22118",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -454,7 +460,7 @@
       "expire_date": "2024-12-04"
     },
     {
-      "id": 17828,
+      "id": "17828",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -475,7 +481,7 @@
       "expire_date": "2024-10-05"
     },
     {
-      "id": 17830,
+      "id": "17830",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -496,7 +502,7 @@
       "expire_date": "2024-10-24"
     },
     {
-      "id": 17925,
+      "id": "17925",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -517,7 +523,7 @@
       "expire_date": "2025-01-10"
     },
     {
-      "id": 17406,
+      "id": "17406",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -538,7 +544,7 @@
       "expire_date": "2024-07-12"
     },
     {
-      "id": 15514,
+      "id": "15514",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -559,7 +565,7 @@
       "expire_date": "2024-05-31"
     },
     {
-      "id": 15516,
+      "id": "15516",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -580,7 +586,7 @@
       "expire_date": "2024-07-18"
     },
     {
-      "id": 18601,
+      "id": "18601",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -601,7 +607,7 @@
       "expire_date": "2024-06-26"
     },
     {
-      "id": 18614,
+      "id": "18614",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -622,7 +628,7 @@
       "expire_date": "2024-06-26"
     },
     {
-      "id": 18615,
+      "id": "18615",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -643,7 +649,7 @@
       "expire_date": "2024-06-26"
     },
     {
-      "id": 18616,
+      "id": "18616",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -664,7 +670,7 @@
       "expire_date": "2024-06-26"
     },
     {
-      "id": 18618,
+      "id": "18618",
       "companyId": 327,
       "type": "status_claim",
       "status": "allowed",
@@ -683,7 +689,93 @@
       "serial_number": "AB00459",
       "issue_date": "2023-08-15",
       "expire_date": "2024-06-26"
+    },
+    {
+      "id": "4a21",
+      "countries": [],
+      "companies": []
     }
   ],
-  "login": [{ "email": "asd@mail.ru", "password": "asd" }]
+  "login": [
+    {
+      "email": "asd@mail.ru",
+      "password": "asd",
+      "id": "2b42"
+    },
+    {
+      "id": "cfed",
+      "email": "asd@mailru",
+      "password": "asd"
+    },
+    {
+      "id": "22f4",
+      "email": "tester@yahoo.com",
+      "password": "asdasd"
+    },
+    {
+      "id": "90c9",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "6626",
+      "email": "asd@mail.ru",
+      "password": "asdasdasd"
+    },
+    {
+      "id": "c4b0",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "4390",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "e598",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "d566",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "bca2",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "5fa2",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "e261",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "b7ef",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "1205",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "c256",
+      "email": "asd@mail.ru",
+      "password": "asdasd"
+    },
+    {
+      "id": "e85c",
+      "email": "asd@mail.ru",
+      "password": "sdfsdf"
+    }
+  ]
 }

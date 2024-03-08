@@ -1,5 +1,4 @@
 import { Select, Skeleton } from 'antd';
-import { memo } from 'react';
 
 const SkeletonSelect = ({ isLoading, onChange, options, selectedValues }) => {
   return isLoading ? (
@@ -19,4 +18,4 @@ const SkeletonSelect = ({ isLoading, onChange, options, selectedValues }) => {
   );
 };
 
-export default memo(SkeletonSelect);
+export default SkeletonSelect;

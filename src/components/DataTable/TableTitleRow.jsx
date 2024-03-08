@@ -1,5 +1,5 @@
 import { Button, Dropdown, Flex } from 'antd';
-import qs from 'qs';
+
 import { FaGripVertical } from 'react-icons/fa';
 
 import ExportExcelButton from './ExportExcelButton';
@@ -21,8 +21,8 @@ const TableTitleRow = ({
   const countriesOptions = countries?.map((c) => ({ label: c.name_am, value: c.id, key: c.id }));
   const companiesOptions = companies?.map((c) => ({
     label: c.company_title,
-    value: c.company_id,
-    key: c.company_id,
+    value: c.company_id || c.companyId,
+    key: c.company_id || c.companyId,
   }));
 
   const handleOpenChange = (nextOpen, info) => {

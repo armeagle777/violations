@@ -44,10 +44,9 @@ const JkkViolations = () => {
     () => getJkkViolations({ countries: countriesParams, companies: companiesParams }),
     {
       keepPreviousData: true,
+      initialData: [],
     },
   );
-
-  // if (!violations) return null;
 
   const modifiedData = violations?.map((d) => ({ ...d, key: d.id }));
 
@@ -63,6 +62,7 @@ const JkkViolations = () => {
             ellipsis: true,
           }))
       : [];
+
   const [controlledColumns, setControlledColumns] = useState(columns);
 
   const {
@@ -88,10 +88,6 @@ const JkkViolations = () => {
     return <Loader />;
   }
 
-  // const handleFilterCountries = (data) => {
-  //   setSearchParams({ countries: data, companies: companiesParams });
-  // };
-
   const dropdownOptions = controlledColumns.map((el) => ({
     key: el.key,
     label: (
@@ -116,7 +112,6 @@ const JkkViolations = () => {
   return (
     <>
       {/* <Divider>Columns displayed</Divider> */}
-      {/*  onFilterCountries, onFilterCompanies */}
       <TableTitleRow
         dropdownOptions={dropdownOptions}
         countries={countries}
