@@ -21,8 +21,8 @@ const TableTitleRow = ({
   const countriesOptions = countries?.map((c) => ({ label: c.name_am, value: c.id, key: c.id }));
   const companiesOptions = companies?.map((c) => ({
     label: c.company_title,
-    value: c.companyId,
-    key: c.companyId,
+    value: c.company_id,
+    key: c.company_id,
   }));
 
   const handleOpenChange = (nextOpen, info) => {

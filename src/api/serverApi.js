@@ -5,8 +5,7 @@ const serverApi = axios.create({
 });
 
 export const login = async (credentials) => {
-  return await serverApi.get('/login', credentials);
-  // return await serverApi.post('/users/login', credentials);
+  return await serverApi.post('/users/login', credentials);
 };
 
 export const getJkkViolations = async ({ countries, companies }) => {
