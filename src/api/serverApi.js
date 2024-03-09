@@ -5,27 +5,27 @@ const serverApi = axios.create({
 });
 
 export const login = async (credentials) => {
-  // return await serverApi.post('/users/login', credentials);
-  return await serverApi.post('/login', credentials);
+  return await serverApi.post('/users/login', credentials);
+  // return await serverApi.post('/login', credentials);
 };
 
 export const getJkkViolations = async ({ countries, companies }) => {
-  // const response = await serverApi.post('/tables/jkk', { countries, companies });
-  const response = await serverApi.get('/violations', { countries, companies });
+  const response = await serverApi.post('/tables/jkk', { countries, companies });
+  // const response = await serverApi.get('/violations', { countries, companies });
 
   return response.data;
 };
 
 export const getCountries = async () => {
-  // const response = await serverApi.get('/tables/countries');
-  const response = await serverApi.get('/countries');
+  const response = await serverApi.get('/tables/countries');
+  // const response = await serverApi.get('/countries');
 
   return response.data;
 };
 
 export const getCompanies = async () => {
-  // const response = await serverApi.get('/tables/companies');
-  const response = await serverApi.get('/companies');
+  const response = await serverApi.get('/tables/companies');
+  // const response = await serverApi.get('/companies');
 
   return response.data;
 };
