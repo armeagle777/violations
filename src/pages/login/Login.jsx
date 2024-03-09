@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-// import { useAuth } from '../../store/AuthContext';
 import { useSignIn } from 'react-auth-kit';
 import { useMutation } from '@tanstack/react-query';
-import { login } from '../../api/serverApi';
 import LinearProgress from '@mui/material/LinearProgress';
-// const loginImage = require('../../assets/login_bg.jpg');
+import { useNavigate, useLocation } from 'react-router-dom';
+
+import { login } from '../../api/serverApi';
 import loginImage from '../../assets/login_bg.jpg';
 
 import './mdb.min.css';

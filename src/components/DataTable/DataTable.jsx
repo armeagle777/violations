@@ -1,46 +1,48 @@
-import { Switch, Table } from 'antd';
-import React, { useState } from 'react';
+import { Table } from 'antd';
 
 import TableTitleRow from './TableTitleRow';
 
-const DataTable = ({}) => {
-  const columns =
-    data?.length > 0
-      ? Object.keys(data[0])
-          .filter((item) => item !== 'key')
-          .map((item, index) => ({
-            key: index,
-            dataIndex: item,
-            title: item.toUpperCase(),
-            hidden: !jkkTableDefaultColumns.includes(item),
-            ellipsis: true,
-          }))
-      : [];
+const DataTable = ({
+  isLoading,
+  countries,
+  companies,
+  modifiedData,
+  countriesParams,
+  dropdownOptions,
+  companiesParams,
+  controlledColumns,
+  isCompaniesLoading,
+  isCountriesLoading,
+  handleFilterCountries,
+  handleFilterCompanies,
+}) => {
+  return (
+    <>
+      <TableTitleRow
+        dropdownOptions={dropdownOptions}
+        countries={countries}
+        countriesParams={countriesParams}
+        companiesParams={companiesParams}
+        companies={companies}
+        isCountriesLoading={isCountriesLoading}
+        isCompaniesLoading={isCompaniesLoading}
+        onFilterCountries={handleFilterCountries}
+        onFilterCompanies={handleFilterCompanies}
+      />
 
-  const [controlledColumns, setControlledColumns] = useState(columns);
-
-  const dropdownOptions = controlledColumns.map((el) => ({
-    key: el.key,
-    label: (
-      <>
-        <Switch key={el.key} size="small" checked={!el.hidden} onChange={() => handleSwitchChange(el.key)} />
-        <span>{el.title}</span>
-      </>
-    ),
-  }));
-
-  const handleSwitchChange = (id) => {
-    setControlledColumns((prev) =>
-      prev.map((el) => {
-        if (el.key === id) {
-          return { ...el, hidden: !el.hidden };
-        }
-        return el;
-      }),
-    );
-  };
-
-  return <></>;
+      <Table
+        columns={controlledColumns}
+        dataSource={modifiedData}
+        loading={isLoading}
+        scroll={{
+          x: 1000,
+        }}
+        style={{
+          marginTop: 8,
+        }}
+      />
+    </>
+  );
 };
 
 export default DataTable;

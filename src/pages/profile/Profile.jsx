@@ -1,7 +1,7 @@
-import React from 'react';
+import { memo } from 'react';
 
 const Profile = () => {
   return <div>Profile</div>;
 };
 
-export default Profile;
+export default memo(Profile);

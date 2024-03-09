@@ -1,7 +1,7 @@
-import React from 'react';
+import { memo } from 'react';
 
 const EatmViolations = () => {
   return <div>EatmViolations</div>;
 };
 
-export default EatmViolations;
+export default memo(EatmViolations);

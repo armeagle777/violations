@@ -27,10 +27,13 @@ export const messages = {
   upload: {
     downloadError: 'Փորձեք ավելի ուշs',
   },
+  notFound: {
+    pageNotFound: 'Կներեք, նման էջ գոյություն չունի',
+  },
   shops: {
     deleteError: 'Ինչ որ բան այնպես չէ',
-    editError: 'Չհաջողվեց ղմբագրել',
-    editSuccess: 'Հաջողությամբ ղմբագրվեց',
+    editError: 'Չհաջողվեց խմբագրել',
+    editSuccess: 'Հաջողությամբ խմբագրվեց',
     deleteSuccess: 'Հաջողությամբ հեռացվել է',
   },
 };

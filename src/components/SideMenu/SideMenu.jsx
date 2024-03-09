@@ -1,14 +1,12 @@
-import { UploadOutlined, VideoCameraOutlined } from '@ant-design/icons';
-import { Layout, Menu, Flex, Divider } from 'antd';
-import { MdSpaceDashboard } from 'react-icons/md';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { Flex, Layout, Menu } from 'antd';
+import { isMobile } from 'react-device-detect';
 
 import { menuItems } from '../../utils/constants';
-import ProfileSection from './profileSection.jsx/ProfileSection';
+import ProfileSection from './ProfileSection/ProfileSection';
 
 const { Sider } = Layout;
 
-const Menuslider = ({ isDarkMode, collapsed }) => {
+const SideMenu = ({ isDarkMode, collapsed }) => {
   const menuColapseOptions = isMobile
     ? { breakpoint: 'lg', collapsedWidth: '0' }
     : { trigger: null, collapsible: true, collapsed: collapsed };
@@ -31,4 +29,4 @@ const Menuslider = ({ isDarkMode, collapsed }) => {
   );
 };
 
-export default Menuslider;
+export default SideMenu;
